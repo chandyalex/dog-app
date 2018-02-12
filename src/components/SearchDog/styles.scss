@@ -1,0 +1,62 @@
+#SearchDog {
+  padding-top: 6vh;
+  color: #777;
+  font-family: Trebuchet MS;
+  display: flex;
+
+  #search-panel, #photo-panel {
+    flex: 1;
+  }
+
+  #photo-panel {
+    text-align: center;
+    margin-top: 12vh;
+    img {
+      width: 100%;
+    }
+  }  
+
+  #title-search {
+    color: #555;
+    font-size: 18pt;
+  }
+
+  .search-input {
+    width: 300px;
+    outline: 0;
+    padding: 14px 18px;
+    border-radius: 3px;
+    border: 1px solid #b5b5b5;
+    font-size: 12pt;
+  }
+
+  #result-list {
+    width: 350px;
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 25px;
+    padding: 0;
+    display: block;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    li {
+      font-size: 13pt;
+      text-align: left;
+      cursor: pointer;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+      padding: 8px 24px;
+      color: #3293c3;
+      text-transform: capitalize;
+      &:hover {
+        background: #fafafa;
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
