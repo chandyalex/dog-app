@@ -1,6 +1,6 @@
 # [![GoChandy](http://tv.gochandy.com/img/favicon.png)](https://www.gochandy.com/) ReactJS - Dogs Catalog App
 
-> This is a ReactJS project made for learning the library with small SPA and API connection...
+> This is a ReactJS project made for learning the library with a small SPA and API connection...
 
 ###### NOTES
 - The project stills improving (while learning)
@@ -12,7 +12,7 @@
 
 ## Technologies involved
 - [Webpack](https://webpack.js.org/) module bundler (and dev-server)
-- [ReactJS](https://reactjs.org/) Javascript library for build moderns web apps
+- [ReactJS](https://reactjs.org/) Javascript library for build modern web apps
 - [React-Router-Dom](https://reacttraining.com/react-router/) for handling app routing on SPA
 - [Axios](https://github.com/mzabriskie/axios) for make request to a server (API Requests)
 - Babel, Babel Loader, Sass/Style Loaders

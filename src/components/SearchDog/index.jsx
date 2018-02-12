@@ -25,7 +25,7 @@ class SearchDog extends Component {
     return (
       <div id="SearchDog">
         <div id='search-panel'>
-          <h3 id='title-search'>Search a dog by raze</h3>
+          <h3 id='title-search'>Search a dog by breed</h3>
           <input className='search-input' type='text' placeholder='Enter raze to search' onChange={ this.filterDogList.bind(this) } />
           <br /><br />
           <span className={ this.state.dogList.length ? 'hide' : ''}>Loading List</span>
