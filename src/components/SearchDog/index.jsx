@@ -8,6 +8,7 @@ class SearchDog extends Component {
     super(props)
     this.state = {
       showImage: true,
+      dogName: '',
       dogImage: 'https://s3.amazonaws.com/nd.images/uploads/paw_gplus.png',
       dogList: [],
       dogListFiltered: []
@@ -26,7 +27,7 @@ class SearchDog extends Component {
       <div id="SearchDog">
         <div id='search-panel'>
           <h3 id='title-search'>Search a dog by breed</h3>
-          <input className='search-input' type='text' placeholder='Enter raze to search' onChange={ this.filterDogList.bind(this) } />
+          <input className='search-input' type='text' placeholder='Enter breed to search' onChange={ this.filterDogList.bind(this) } />
           <br /><br />
           <span className={ this.state.dogList.length ? 'hide' : ''}>Loading List</span>
           <ul id='result-list'>
@@ -34,6 +35,7 @@ class SearchDog extends Component {
           </ul>
         </div>
         <div id='photo-panel'>
+          <h3 className='dog-name'>{this.state.dogName}</h3>
           <img src={this.state.dogImage} />
           <h5 className={ this.state.showImage ? 'hide' : ''}>Loading Image...</h5>
         </div>
@@ -68,13 +70,14 @@ class SearchDog extends Component {
     })
   }
 
-  loadDogImage(raze) {
+  loadDogImage(breed) {
     if (!this.state.showImage) return
     this.setState({
       showImage: false,
-      dogImage: null
+      dogImage: null,
+      dogName: breed
     })
-    $axios.get('https://dog.ceo/api/breed/' + raze + '/images/random')
+    $axios.get('https://dog.ceo/api/breed/' + breed + '/images/random')
     .then((res) => {
       this.setState({
         showImage: true,

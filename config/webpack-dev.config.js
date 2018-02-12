@@ -14,7 +14,6 @@ module.exports = {
     port: 8080,
     open: false,
     hot: true,
-    quiet: true,
     overlay: true,
     clientLogLevel: 'none',
     historyApiFallback: true

@@ -11,6 +11,10 @@
   #photo-panel {
     text-align: center;
     margin-top: 12vh;
+    .dog-name {
+      text-transform: capitalize;
+      font-size: 18pt;
+    }
     img {
       width: 100%;
     }
