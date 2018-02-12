@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --config config/webpack-dev.config",
-    "prod": "webpack -p --config config/webpack-prod.config"
+    "build": "webpack -p --config config/webpack-prod.config"
   },
   "author": "AlexanderCR",
   "license": "ISC",

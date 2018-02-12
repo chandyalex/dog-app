@@ -23,9 +23,14 @@
 > Then on the console:
 
 ``` bash
+
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve for dev with hmre
 npm run dev
+
+# build the app (create /docs/app-bundle.min.js)
+npm run build
+
 ```

@@ -1,30 +1,24 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
 
   entry: './src/main.jsx',
   output: {
-    filename: './bundle.js'
+    filename: './docs/app-bundle.min.js'
   },
 
   resolve: {
     extensions: ['.js', '.jsx']
   },
 
-  devServer: {
-    port: 8080,
-    open: false,
-    hot: true,
-    overlay: true,
-    clientLogLevel: 'none',
-    historyApiFallback: true
-  },
-
   module: {
     rules: [
       {
         test: [/\.js$/, /\.jsx$/],
-        use: 'babel-loader',
+        loader: 'babel-loader',
+        query: {
+          babelrc: false,
+          presets: ["es2015", "react"]
+        },
         exclude: /node_modules/
       },
       {
