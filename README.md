@@ -5,6 +5,8 @@
 ###### NOTES
 - The project stills improving (while learning)
 - The API is from DOG CEO
+- For Live Demo click on `Search Dog` (GHP has not SPA support)
+- [View Live Demo on Github Pages](https://chandyalexcr.github.io/dog-app/)
 
 ###### PREVIEW
 - Search Dog & View Image
